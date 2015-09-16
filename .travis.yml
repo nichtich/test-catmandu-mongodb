@@ -1,0 +1,8 @@
+language: perl
+perl:
+  - "5.20"
+  - "5.18"
+  - "5.16"
+  - "5.14"
+install: cpanm -l local --skip-satisfied --installdeps .
+script: perl -Ilocal/lib/perl5 test.pl
